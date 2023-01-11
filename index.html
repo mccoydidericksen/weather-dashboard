@@ -24,9 +24,9 @@
     </div>
       
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row justify-content-center">
           
-          <div class="col">
+          <div class="col-12 col-lg-4 col-md-6">
             <div class="card bg-dark text-white m-1">
               <div class="card-body">
                 <h5 class="card-title">Search for a City</h5>
@@ -38,45 +38,89 @@
                 </form>
               </div>
             </div>
+          </div>
 
-            <div class="col">
-              <div class="card bg-dark text-white m-1">
-                <div class="card-body">
-                  <h5 class="card-title">Current Weather</h5>
-                  <div class="card-text">
+              <div class="col-12 col-lg-8 col-md-6">
+                <div class="card bg-dark text-white m-1">
+                  <div class="card-body">
+                    <h5 class="card-title">Current Weather</h5>
+                    <div class="card-text">
+                      <div class="row">
+                        <div class="col-12">
+                          <h2 id="city-name" class="card-title">City Name</h2>
+                          </div>
+                          <div class="col-12">
+                            <p id="current-date" class="card-text">Date</p>
+                          </div>
+                      </div>
+                    </div>
                     <div class="row">
                       <div class="col-12">
-                        <h2 id="city-name" class="card-title">City Name</h2>
-                        </div>
-                        <div class="col-12">
-                          <p id="current-date" class="card-text">Date</p>
-                        </div>
+                        <img id="current-weather-icon" src="http://openweathermap.org/img/w/10d.png" alt="weather icon" />
+                      </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <img id="weather-icon" src="http://openweathermap.org/img/w/10d.png" alt="weather icon" />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <p id="current-temp" class="card-text">Temperature: 75 F</p>
-                    </div>
-                    <div class="col-12">
-                      <p id="current-humidity" class="card-text">Humidity: 75%</p>
-                    </div>
-                    <div class="col-12">
-                      <p id="current-wind" class="card-text">Wind Speed: 10 MPH</p>
-                    </div>
-                    <div class="col-12">
-                      <p id="current-index" class="card-text">UV Index: 5</p>
+                    <div class="row">
+                      <div class="col-12">
+                        <p id="current-temp" class="card-text">Temperature: 75 F</p>
+                      </div>
+                      <div class="col-12">
+                        <p id="current-humidity" class="card-text">Humidity: 75%</p>
+                      </div>
+                      <div class="col-12">
+                        <p id="current-wind" class="card-text">Wind Speed: 10 MPH</p>
+                      </div>
+                      <div class="col-12">
+                        <p id="current-index" class="card-text">UV Index: 5</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+            <div class="container">
+                <div class="row justify-content-center bg-dark text-white m-1 rounded">
+                  <h3>5-Day Forecast</h3>
+                  <div class="col">
+                    <p id="0-date">Date</p>
+                    <img id="0-weather-icon" src="http://openweathermap.org/img/w/10d.png" alt="weather icon" />
+                    <p id="0-temp">Temperature: 75 F</p>
+                    <p id="0-humidity">Humidity: 75%</p>
+                    <p id="0-wind">Wind Speed: 10 MPH</p>
+                    <p id="0-index">UV Index: 5</p>
+                  </div>
+                  <div class="col">
+                    <p id="1-date">Date</p>
+                    <img id="1-weather-icon" src="http://openweathermap.org/img/w/10d.png" alt="weather icon" />
+                    <p id="1-temp">Temperature: 75 F</p>
+                    <p id="1-humidity">Humidity: 75%</p>
+                    <p id="1-wind">Wind Speed: 10 MPH</p>
+                    <p id="1-index">UV Index: 5</p>
+                  </div>
+                  <div class="col">
+                    <p id="2-date">Date</p>
+                    <img id="2-weather-icon" src="http://openweathermap.org/img/w/10d.png" alt="weather icon" />
+                    <p id="2-temp">Temperature: 75 F</p>
+                    <p id="2-humidity">Humidity: 75%</p>
+                    <p id="2-wind">Wind Speed: 10 MPH</p>
+                    <p id="2-index">UV Index: 5</p>
+                  </div>
+                  <div class="col">
+                    <p id="3-date">Date</p>
+                    <img id="3-weather-icon" src="http://openweathermap.org/img/w/10d.png" alt="weather icon" />
+                    <p id="3-temp">Temperature: 75 F</p>
+                    <p id="3-humidity">Humidity: 75%</p>
+                    <p id="3-wind">Wind Speed: 10 MPH</p>
+                    <p id="3-index">UV Index: 5</p>
+                  </div>
+                  <div class="col">
+                    <p id="4-date">Date</p>
+                    <img id="4-weather-icon" src="http://openweathermap.org/img/w/10d.png" alt="weather icon" />
+                    <p id="4-temp">Temperature: 75 F</p>
+                    <p id="4-humidity">Humidity: 75%</p>
+                    <p id="4-wind">Wind Speed: 10 MPH</p>
+                    <p id="4-index">UV Index: 5</p>
+                  </div>
             </div>
-          </div>
-        </div>
       </div>
 
     <script src="./assets/scripts/script.js"></script>

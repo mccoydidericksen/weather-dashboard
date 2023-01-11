@@ -162,3 +162,5 @@ searchButton.on("click", function(event) {
  });
 
  displaySearchHistory();
+
+ getCoordinates("Salt Lake City");

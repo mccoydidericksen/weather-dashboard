@@ -113,7 +113,9 @@ function getWeather(lat, lon, city){
             storeSearch(city, lat, lon);
             });
         } else {
-            alert("Error: " + response.statusText);
+            $("#staticBackdropLabel").text("Error " + response.status);
+            $(".modal-body").text("Please enter a valid city name.");
+            $("#staticBackdrop").modal('show');
           }
     });
 }
@@ -130,7 +132,9 @@ function getForecast(lat, lon){
             displayForecast(forecastList);
             });
         } else {
-            alert("Error: " + response.statusText);
+            $("#staticBackdropLabel").text("Error " + response.status);
+            $(".modal-body").text("Please enter a valid city name.");
+            $("#staticBackdrop").modal('show');
           }
     });
 }
@@ -148,7 +152,9 @@ function getCoordinates(city) {
         getWeather(lat, lon, city);
       });
     } else {
-      alert("Error: " + response.statusText);
+        $("#staticBackdropLabel").text("Error " + response.status);
+        $(".modal-body").text("Please enter a valid city name.");
+        $("#staticBackdrop").modal('show');
     }
   });
 }
@@ -162,5 +168,4 @@ searchButton.on("click", function(event) {
  });
 
  displaySearchHistory();
-
  getCoordinates("Salt Lake City");
